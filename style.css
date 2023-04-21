@@ -1,0 +1,97 @@
+body { background-color: #1D1D2C;  margin: 0; padding: 0; }
+body * { box-sizing: border-box; color: #7A7E99; font-family: "Poppins", sans-serif; }
+
+li { list-style: none; }
+a { text-decoration: none; }
+
+.color-white { color: #fff; }
+.fw-400 { font-weight: 400; }
+.fw-700 { font-weight: 700; }
+
+#main { display: block; width: 100%; max-width: 100%; position: relative; }
+
+.container { display: block; position: relative; }
+.section { background-color: rgba(0,0,0,0); padding: 60px 0; }
+/* .element { background-color: rgba(158, 0, 255, 0.1); border: 1px dashed #9E00FF; border-radius: 20px; padding: 60px 30px; } */
+.element { background-color: rgba(158, 0, 255, 0.1); background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%239E00FF' stroke-width='4' stroke-dasharray='10%2c 20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"); border-radius: 20px; padding: 60px 30px; }
+
+/* ----------------------------------------------- GRIDDING ----------------------------------------------- */
+.align-items-start { align-items: start; }
+.align-items-center { align-items: center; }
+.align-items-end { align-items: end; }
+
+.flex-start { justify-content:flex-start; }
+.space-between { justify-content: space-between; }
+.flex-end { justify-content:flex-end; }
+
+.align-content-start { align-content: flex-start; }
+.align-content-center { align-content: center; }
+.align-content-end { align-content: flex-end; }
+
+.justify-content-center { justify-content: center; }
+
+.fixed-width { display: block; width: 100%; max-width: 1230px; margin: auto; }
+.full-width { display: block; width: 100%; max-width: 100%; }
+.row { display: flex; flex-wrap: wrap; position: relative; width: 100%; max-width: 100%; }
+
+
+.col-12 { width: 100%; max-width: calc(100% / 12 * 12); flex: 0 0 100%; padding: 15px; }
+.col-6 { width: 100%; max-width: calc(100% / 12 * 6); flex: 0 0 calc(100% / 12 * 6); padding: 15px; }
+.col-4 { width: 100%; max-width: calc(100% / 12 * 4); flex: 0 0 calc(100% / 12 * 4); padding: 15px; }
+.col-3 { width: 100%; max-width: calc(100% / 12 * 3); flex: 0 0 calc(100% / 12 * 3); padding: 15px; }
+.col-2 { width: 100%; max-width: calc(100% / 12 * 2); flex: 0 0 calc(100% / 12 * 2); padding: 15px; }
+
+/* Large Below */
+@media ( max-width: 1440px ) {
+    .fixed-width { max-width: 1080px; }
+}
+@media ( max-width: 1366px ) {
+    .fixed-width { max-width: 992px; }
+    .col-2 { width: 100%; max-width: calc(100% / 12 * 4); flex: 0 0 calc(100% / 12 * 4); }
+}
+/* Medium Below */
+@media ( max-width: 1240px ) {
+    .fixed-width { max-width: 768px; }
+    .col-6 { width: 100%; max-width: calc(100% / 12 * 12); flex: 0 0 calc(100% / 12 * 12); }
+    .col-4 { width: 100%; max-width: calc(100% / 12 * 12); flex: 0 0 calc(100% / 12 * 12); }
+    .col-3 { width: 100%; max-width: calc(100% / 12 * 6); flex: 0 0 calc(100% / 12 * 6); }
+    .col-2 { width: 100%; max-width: calc(100% / 12 * 6); flex: 0 0 calc(100% / 12 * 6); }
+}
+@media ( max-width: 1024px ) {
+    .fixed-width { max-width: 80%; }
+}
+/* Small Below */
+@media ( max-width: 667px ) {
+    .fixed-width { max-width: calc(100% - 60px); }
+    .col-12 { padding: 10px; }
+    .col-6 { padding: 10px; }
+    .col-4 { padding: 10px; }
+    .col-3 { padding: 10px; }
+    .col-2 { padding: 10px; }
+}
+@media ( max-width: 567px ) {
+    .fixed-width { max-width: calc(100% - 30px); }
+}
+/* ----------------------------------------------- GRIDDING ----------------------------------------------- */
+
+
+
+
+/* ----------------------------------------------- HEADER ----------------------------------------------- */
+#header { background-color: #171725; padding: 0 60px; }
+#header #logo { width: 100%; max-width: auto; height: 80px; }
+#header #logo .logo-text { font-size: 40px; margin: auto; }
+#header #menu .menu-items li { padding: 15px; }
+#header #menu .menu-items li a { transition: 0.4s ease all; }
+#header #menu .menu-items li a:hover { color: #BBC1ED; }
+
+/* ----------------------------------------------- HEADER ----------------------------------------------- */
+
+
+
+
+/* ----------------------------------------------- LABEL ----------------------------------------------- */
+
+/* Styles here... */
+
+/* ----------------------------------------------- LABEL ----------------------------------------------- */
